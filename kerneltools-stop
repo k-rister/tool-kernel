@@ -126,11 +126,11 @@ for subtool in `echo $subtools | sed -e 's/,/ /g'`; do
             ${taskset_cmd} xz --threads=0 perf.data
             ;;
         turbostat)
-            if [ -e turbostat-out.txt ]; then
+            if [ -e turbostat-stdout.txt ]; then
                 echo "Compressing turbostat output"
-                ${taskset_cmd} xz --threads=0 turbostat-out.txt
+                ${taskset_cmd} xz --threads=0 turbostat-stdout.txt
             else
-                echo "Warning: turbostat-out.txt was not found"
+                echo "Warning: turbostat-stdout.txt was not found"
             fi
             ;;
         trace-cmd)
