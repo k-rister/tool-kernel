@@ -5,9 +5,6 @@
         }
     },
     "tool": "kernel",
-    "controller": {
-        "post-script": "%tool-dir%kerneltools-post-process"
-    },
     "collector": {
         "files-from-controller": [
             {
